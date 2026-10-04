@@ -1,0 +1,26 @@
+{
+  "name": "@local/dsh-telegram-bridge",
+  "version": "1.1.4",
+  "private": true,
+  "type": "module",
+  "description": "Bridge one DSH session to a Telegram bot: forward session messages, inject creator replies, and answer agent questions from Telegram.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": ["locale/*.json", "icon.svg"],
+  "icon": "./icon.svg",
+  "dependencies": {
+    "zod": "4.6.5"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  }
+}

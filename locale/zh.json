@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Telegram 桥接",
+    "description": "把会话桥接到你的 Telegram Bot：转发会话消息、注入创作者回复、在 Bot 上回答 Agent 提问。"
+  }
+}

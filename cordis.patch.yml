@@ -1,0 +1,6 @@
+# Telegram Bridge bundle patch: one Host plugin row; the Client half is
+# discovered from the package's `dsh.client` declaration.
+- insert:
+    - id: telegram-bridge
+      name: '@local/dsh-telegram-bridge'
+      config: {}

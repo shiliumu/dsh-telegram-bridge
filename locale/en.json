@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Telegram Bridge",
+    "description": "Forward a session to your Telegram bot: read messages, inject creator replies, answer agent questions from Telegram."
+  }
+}
